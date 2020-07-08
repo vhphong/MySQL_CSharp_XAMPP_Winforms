@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MySQL_CShrap_XAMPP_Winforms
+namespace MySQL_CSharp_XAMPP_Winforms
 {
 	static class Program
 	{

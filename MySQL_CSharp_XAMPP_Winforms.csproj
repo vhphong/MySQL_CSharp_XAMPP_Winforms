@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B5324A03-4AB2-450B-B92C-AA5D076858AE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MySQL_CShrap_XAMPP_Winforms</RootNamespace>
-    <AssemblyName>MySQL_CShrap_XAMPP_Winforms</AssemblyName>
+    <RootNamespace>MySQL_CSharp_XAMPP_Winforms</RootNamespace>
+    <AssemblyName>MySQL_CSharp_XAMPP_Winforms</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

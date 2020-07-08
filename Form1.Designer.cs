@@ -1,4 +1,4 @@
-﻿namespace MySQL_CShrap_XAMPP_Winforms
+﻿namespace MySQL_CSharp_XAMPP_Winforms
 {
 	partial class FormUI
 	{

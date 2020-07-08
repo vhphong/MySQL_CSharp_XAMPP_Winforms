@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MySQL_CShrap_XAMPP_Winforms.Properties
+namespace MySQL_CSharp_XAMPP_Winforms.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace MySQL_CShrap_XAMPP_Winforms.Properties
 			{
 				if ((resourceMan == null))
 				{
-					global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MySQL_CShrap_XAMPP_Winforms.Properties.Resources", typeof(Resources).Assembly);
+					global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MySQL_CSharp_XAMPP_Winforms.Properties.Resources", typeof(Resources).Assembly);
 					resourceMan = temp;
 				}
 				return resourceMan;

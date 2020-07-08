@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MySQL_CShrap_XAMPP_Winforms.Properties
+namespace MySQL_CSharp_XAMPP_Winforms.Properties
 {
 
 

@@ -1,4 +1,8 @@
-﻿using System;
+﻿// testing command:
+//INSERT INTO studentinfo(sid, firstname, lastname, ssn, dob, gender)
+//VALUES("", "Hong", "Huynh", 111995555, "1999-6-18", "F");
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
-namespace MySQL_CShrap_XAMPP_Winforms
+namespace MySQL_CSharp_XAMPP_Winforms
 {
 	public partial class FormUI : Form
 	{
@@ -34,21 +38,26 @@ namespace MySQL_CShrap_XAMPP_Winforms
 
 			if (query == "")
 			{
-				MessageBox.Show("Please insert a sql query!");
+				MessageBox.Show("Please insert a sql query!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				return;
 			}
 
+			// initiate the MySQLConnection to the database in XAMPP
 			string MySQLConnectionString = "datasource=127.0.0.1; port=3306; username=root; password=; database=dbstudentmanager";
 
 			MySqlConnection databaseConnection = new MySqlConnection(MySQLConnectionString);
 
 			MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+
+			// limit the execution time of the query
 			commandDatabase.CommandTimeout = 60;
 
 			try
 			{
+				// Open the database
 				databaseConnection.Open();
 
+				// Execute the query
 				MySqlDataReader myReader = commandDatabase.ExecuteReader();
 
 				if (myReader.HasRows)
@@ -71,15 +80,17 @@ namespace MySQL_CShrap_XAMPP_Winforms
 				}
 				else
 				{
-					MessageBox.Show("Query successfully executed");
+					MessageBox.Show("No rows found.");
 				}
+
+				// Finally close the connection
+				databaseConnection.Close();
 			}
 			catch (Exception e)
 			{
+				// Show any error message
 				MessageBox.Show("Query error " + e.Message);
 			}
-
-
 		}
 	}
 }
